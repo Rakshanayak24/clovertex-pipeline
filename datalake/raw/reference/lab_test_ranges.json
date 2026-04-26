@@ -1,0 +1,114 @@
+{
+  "glucose_fasting": {
+    "unit": "mg/dL",
+    "normal_low": 70,
+    "normal_high": 100,
+    "critical_low": 40,
+    "critical_high": 400
+  },
+  "hba1c": {
+    "unit": "%",
+    "normal_low": 4.0,
+    "normal_high": 5.6,
+    "critical_low": 3.0,
+    "critical_high": 14.0
+  },
+  "creatinine": {
+    "unit": "mg/dL",
+    "normal_low": 0.6,
+    "normal_high": 1.2,
+    "critical_low": 0.2,
+    "critical_high": 12.0
+  },
+  "bun": {
+    "unit": "mg/dL",
+    "normal_low": 7,
+    "normal_high": 20,
+    "critical_low": 2,
+    "critical_high": 100
+  },
+  "sodium": {
+    "unit": "mEq/L",
+    "normal_low": 136,
+    "normal_high": 145,
+    "critical_low": 120,
+    "critical_high": 160
+  },
+  "potassium": {
+    "unit": "mEq/L",
+    "normal_low": 3.5,
+    "normal_high": 5.0,
+    "critical_low": 2.5,
+    "critical_high": 6.5
+  },
+  "hemoglobin": {
+    "unit": "g/dL",
+    "normal_low": 12.0,
+    "normal_high": 17.5,
+    "critical_low": 5.0,
+    "critical_high": 20.0
+  },
+  "wbc": {
+    "unit": "x10^3/uL",
+    "normal_low": 4.5,
+    "normal_high": 11.0,
+    "critical_low": 1.0,
+    "critical_high": 30.0
+  },
+  "platelets": {
+    "unit": "x10^3/uL",
+    "normal_low": 150,
+    "normal_high": 400,
+    "critical_low": 20,
+    "critical_high": 1000
+  },
+  "alt": {
+    "unit": "U/L",
+    "normal_low": 7,
+    "normal_high": 56,
+    "critical_low": 3,
+    "critical_high": 500
+  },
+  "ast": {
+    "unit": "U/L",
+    "normal_low": 10,
+    "normal_high": 40,
+    "critical_low": 5,
+    "critical_high": 500
+  },
+  "total_cholesterol": {
+    "unit": "mg/dL",
+    "normal_low": 125,
+    "normal_high": 200,
+    "critical_low": 80,
+    "critical_high": 400
+  },
+  "ldl": {
+    "unit": "mg/dL",
+    "normal_low": 0,
+    "normal_high": 100,
+    "critical_low": 0,
+    "critical_high": 300
+  },
+  "hdl": {
+    "unit": "mg/dL",
+    "normal_low": 40,
+    "normal_high": 60,
+    "critical_low": 15,
+    "critical_high": 100
+  },
+  "triglycerides": {
+    "unit": "mg/dL",
+    "normal_low": 0,
+    "normal_high": 150,
+    "critical_low": 0,
+    "critical_high": 500
+  },
+  "tsh": {
+    "unit": "mIU/L",
+    "normal_low": 0.4,
+    "normal_high": 4.0,
+    "critical_low": 0.01,
+    "critical_high": 50.0
+  }
+}

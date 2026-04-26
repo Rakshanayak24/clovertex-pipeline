@@ -1,0 +1,111 @@
+{
+  "zone": "consumption",
+  "generated_at": "2026-04-25T11:45:21+00:00",
+  "files": [
+    {
+      "file": "anomaly_flags.parquet",
+      "rows": 889,
+      "schema": {
+        "patient_id": "object",
+        "anomaly_type": "object",
+        "detail": "object",
+        "severity": "object"
+      },
+      "sha256": "0c4af6c6f5a949f8373dcdcc08db4ed439d1c59a17fc5aa593d1e1b722fd94f8",
+      "written_at": "2026-04-25T11:45:21+00:00"
+    },
+    {
+      "file": "classified_notes.parquet",
+      "rows": 1119,
+      "schema": {
+        "note_id": "object",
+        "patient_id": "object",
+        "note_category": "object",
+        "expected_category": "object",
+        "note_date": "datetime64[ns]",
+        "author": "object",
+        "word_count": "object",
+        "is_addendum": "object",
+        "_source_file": "object",
+        "orphan_record": "bool",
+        "predicted_category": "object",
+        "classification_correct": "bool"
+      },
+      "sha256": "851be10dd645138bb1bbb104f8670f110c649e9b3d531a42f8310d90e215a2eb",
+      "written_at": "2026-04-25T11:45:21+00:00"
+    },
+    {
+      "file": "diagnosis_frequency.parquet",
+      "rows": 13,
+      "schema": {
+        "chapter": "object",
+        "patient_count": "int64",
+        "pct_of_patients": "float64"
+      },
+      "sha256": "8f74d948696bd55b711ca834fd2d370e7356cf1ef8198ac1cdfc78d6b7f2b1c9",
+      "written_at": "2026-04-25T11:45:21+00:00"
+    },
+    {
+      "file": "high_risk_patients.parquet",
+      "rows": 2,
+      "schema": {
+        "patient_id": "object",
+        "max_hba1c": "float64",
+        "pathogenic_variant_count": "int64",
+        "demographics_missing": "bool",
+        "sex": "object",
+        "age_years": "float64",
+        "site_id": "object"
+      },
+      "sha256": "862deaa993b5812e8cf6232aca33855e41454d4df8f5cecbc20cb95ccd4aba7a",
+      "written_at": "2026-04-25T11:45:21+00:00"
+    },
+    {
+      "file": "lab_statistics.parquet",
+      "rows": 18,
+      "schema": {
+        "test_name": "object",
+        "n_results": "float64",
+        "mean": "float64",
+        "median": "float64",
+        "std": "float64",
+        "p25": "float64",
+        "p75": "float64",
+        "normal_low": "float64",
+        "normal_high": "float64",
+        "out_of_range_count": "float64",
+        "critical_flag_count": "float64",
+        "pct_out_of_range": "float64",
+        "patients_worsening": "float64",
+        "patients_improving": "float64"
+      },
+      "sha256": "3a2fdb2a5aa98be72a402a0fcd34088ae9305ea230aebdce539b88a1c5abcb33",
+      "written_at": "2026-04-25T11:45:21+00:00"
+    },
+    {
+      "file": "patient_summary.parquet",
+      "rows": 21,
+      "schema": {
+        "metric": "object",
+        "value": "float64",
+        "group": "object"
+      },
+      "sha256": "a25bff234bd8b38414fda80a33864682012efc7ce0032c2101ad6f3663efae1a",
+      "written_at": "2026-04-25T11:45:21+00:00"
+    },
+    {
+      "file": "variant_hotspots.parquet",
+      "rows": 5,
+      "schema": {
+        "gene": "object",
+        "variant_count": "int64",
+        "mean_allele_frequency": "float64",
+        "af_p25": "float64",
+        "af_p75": "float64",
+        "unique_patients": "int64"
+      },
+      "sha256": "c2270e62cf903423d9b2cf0debdf01a9d808403e4f263154c8deb398e348729a",
+      "written_at": "2026-04-25T11:45:21+00:00"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "BRCA1": {
+    "full_name": "BRCA1 DNA Repair Associated",
+    "associated_cancers": [
+      "Breast",
+      "Ovarian",
+      "Prostate"
+    ],
+    "chromosome": "chr17"
+  },
+  "BRCA2": {
+    "full_name": "BRCA2 DNA Repair Associated",
+    "associated_cancers": [
+      "Breast",
+      "Ovarian",
+      "Pancreatic"
+    ],
+    "chromosome": "chr13"
+  },
+  "TP53": {
+    "full_name": "Tumor Protein P53",
+    "associated_cancers": [
+      "Li-Fraumeni Syndrome",
+      "Multiple cancers"
+    ],
+    "chromosome": "chr17"
+  },
+  "EGFR": {
+    "full_name": "Epidermal Growth Factor Receptor",
+    "associated_cancers": [
+      "Non-small cell lung cancer",
+      "Glioblastoma"
+    ],
+    "chromosome": "chr7"
+  },
+  "KRAS": {
+    "full_name": "KRAS Proto-Oncogene",
+    "associated_cancers": [
+      "Colorectal",
+      "Pancreatic",
+      "Lung"
+    ],
+    "chromosome": "chr12"
+  },
+  "BRAF": {
+    "full_name": "B-Raf Proto-Oncogene",
+    "associated_cancers": [
+      "Melanoma",
+      "Colorectal",
+      "Thyroid"
+    ],
+    "chromosome": "chr7"
+  },
+  "PIK3CA": {
+    "full_name": "Phosphatidylinositol-4,5-Bisphosphate 3-Kinase",
+    "associated_cancers": [
+      "Breast",
+      "Endometrial",
+      "Colorectal"
+    ],
+    "chromosome": "chr3"
+  },
+  "ALK": {
+    "full_name": "ALK Receptor Tyrosine Kinase",
+    "associated_cancers": [
+      "Non-small cell lung cancer",
+      "Neuroblastoma"
+    ],
+    "chromosome": "chr2"
+  },
+  "ROS1": {
+    "full_name": "ROS Proto-Oncogene 1",
+    "associated_cancers": [
+      "Non-small cell lung cancer"
+    ],
+    "chromosome": "chr6"
+  },
+  "MET": {
+    "full_name": "MET Proto-Oncogene",
+    "associated_cancers": [
+      "Renal cell carcinoma",
+      "Hepatocellular"
+    ],
+    "chromosome": "chr7"
+  },
+  "HER2": {
+    "full_name": "Human Epidermal Growth Factor Receptor 2",
+    "associated_cancers": [
+      "Breast",
+      "Gastric"
+    ],
+    "chromosome": "chr17"
+  },
+  "NRAS": {
+    "full_name": "NRAS Proto-Oncogene",
+    "associated_cancers": [
+      "Melanoma",
+      "Acute myeloid leukemia"
+    ],
+    "chromosome": "chr1"
+  },
+  "APC": {
+    "full_name": "APC Regulator Of WNT Signaling",
+    "associated_cancers": [
+      "Colorectal",
+      "Familial adenomatous polyposis"
+    ],
+    "chromosome": "chr5"
+  },
+  "PTEN": {
+    "full_name": "Phosphatase And Tensin Homolog",
+    "associated_cancers": [
+      "Endometrial",
+      "Glioblastoma",
+      "Prostate"
+    ],
+    "chromosome": "chr10"
+  },
+  "RB1": {
+    "full_name": "RB Transcriptional Corepressor 1",
+    "associated_cancers": [
+      "Retinoblastoma",
+      "Osteosarcoma"
+    ],
+    "chromosome": "chr13"
+  },
+  "CDH1": {
+    "full_name": "Cadherin 1",
+    "associated_cancers": [
+      "Gastric",
+      "Lobular breast cancer"
+    ],
+    "chromosome": "chr16"
+  },
+  "MLH1": {
+    "full_name": "MutL Homolog 1",
+    "associated_cancers": [
+      "Lynch syndrome",
+      "Colorectal"
+    ],
+    "chromosome": "chr3"
+  },
+  "MSH2": {
+    "full_name": "MutS Homolog 2",
+    "associated_cancers": [
+      "Lynch syndrome",
+      "Colorectal"
+    ],
+    "chromosome": "chr2"
+  },
+  "ATM": {
+    "full_name": "ATM Serine/Threonine Kinase",
+    "associated_cancers": [
+      "Breast",
+      "Pancreatic"
+    ],
+    "chromosome": "chr11"
+  },
+  "PALB2": {
+    "full_name": "Partner And Localizer Of BRCA2",
+    "associated_cancers": [
+      "Breast",
+      "Pancreatic"
+    ],
+    "chromosome": "chr16"
+  },
+  "CHEK2": {
+    "full_name": "Checkpoint Kinase 2",
+    "associated_cancers": [
+      "Breast",
+      "Colorectal"
+    ],
+    "chromosome": "chr22"
+  },
+  "RAD51C": {
+    "full_name": "RAD51 Paralog C",
+    "associated_cancers": [
+      "Ovarian",
+      "Breast"
+    ],
+    "chromosome": "chr17"
+  }
+}

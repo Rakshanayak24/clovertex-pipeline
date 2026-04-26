@@ -1,0 +1,653 @@
+{
+  "zone": "refined",
+  "generated_at": "2026-04-25T11:45:16+00:00",
+  "files": [
+    {
+      "file": "clinical_notes.parquet",
+      "rows": 1119,
+      "schema": {
+        "note_id": "object",
+        "patient_id": "object",
+        "note_category": "object",
+        "expected_category": "object",
+        "note_date": "datetime64[ns]",
+        "author": "object",
+        "word_count": "object",
+        "is_addendum": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "f464c2139cf083d4d8bad2ba4f6d3ad0f6b5d4fcee3da0468245a63cabc4c875",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "diagnoses.parquet",
+      "rows": 1628,
+      "schema": {
+        "diagnosis_id": "object",
+        "patient_id": "object",
+        "icd10_code": "object",
+        "description": "object",
+        "diagnosis_date": "datetime64[ns]",
+        "diagnosing_physician": "object",
+        "is_primary": "object",
+        "notes": "object",
+        "severity": "object",
+        "status": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "11c627a224ed9f5b10b6a03be9c91cb9f1304188dd325a7b9a5be428ed938e2b",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "genomics_reliable.parquet",
+      "rows": 872,
+      "schema": {
+        "variant_id": "object",
+        "patient_id": "object",
+        "gene": "object",
+        "chromosome": "object",
+        "position": "int64",
+        "ref_allele": "object",
+        "alt_allele": "object",
+        "variant_type": "object",
+        "allele_frequency": "float64",
+        "read_depth": "int64",
+        "clinical_significance": "object",
+        "sample_date": "datetime64[ns]",
+        "sequencing_platform": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "1f20ca5deda8ed1d3c612af6883cd42dcb1a36b8172137630792de0b834e0286",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=alt/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 128,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "e1a07f6c74568a652c9b1643d90fdfa13b558f24204b4f7fe1778d7effb9d0e0",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=alt/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 128,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "e1a07f6c74568a652c9b1643d90fdfa13b558f24204b4f7fe1778d7effb9d0e0",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=ast/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 140,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "cf654b1b2c4c6301fe05ec21291510190065dbba4fdb880ed5f0f7b5f9a289c2",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=ast/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 140,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "cf654b1b2c4c6301fe05ec21291510190065dbba4fdb880ed5f0f7b5f9a289c2",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=bun/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 127,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "e1b76c4d23a904e954070b38ac0cd891cb0f91abe8dd84b851f3e266d166fcf5",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=bun/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 127,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "e1b76c4d23a904e954070b38ac0cd891cb0f91abe8dd84b851f3e266d166fcf5",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=creatinine/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 140,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "ffcd73043626943131fe839a5dc3b78ee6ea524a4cb592310b3bfd9c1179e51c",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=creatinine/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 140,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "ffcd73043626943131fe839a5dc3b78ee6ea524a4cb592310b3bfd9c1179e51c",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=glucose_fasting/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 136,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "15f4118e400616296ee6216a35dfacadf9b9221828cb75b18edd13ebb19c8192",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=glucose_fasting/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 136,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "15f4118e400616296ee6216a35dfacadf9b9221828cb75b18edd13ebb19c8192",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=hba1c/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 129,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "52386164ff1c6cf7e111529af25af55f9f09fa353cc26c3d7e1076d7456158f7",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=hba1c/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 129,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "52386164ff1c6cf7e111529af25af55f9f09fa353cc26c3d7e1076d7456158f7",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=hdl/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 133,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "9eea6125c10e93b3b3bee654ab2c7241e89cd258ed2e380130496ae7d3feb1e5",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=hdl/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 133,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "9eea6125c10e93b3b3bee654ab2c7241e89cd258ed2e380130496ae7d3feb1e5",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=hemoglobin/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 124,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "35c5c35242aa8fa053bc2b010f461311a56c303af0e79c95d43dee1554c59888",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=hemoglobin/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 124,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "35c5c35242aa8fa053bc2b010f461311a56c303af0e79c95d43dee1554c59888",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=ldl/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 135,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "f040ed34a7fb52cad7a2529525532c358342da11c2e88423db2ef484328d6364",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=ldl/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 135,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "f040ed34a7fb52cad7a2529525532c358342da11c2e88423db2ef484328d6364",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=platelets/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 116,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "e2b2212a851877dddd27a0bc936c064b0dc8f0be35294a203a562c7d40676cda",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=platelets/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 116,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "e2b2212a851877dddd27a0bc936c064b0dc8f0be35294a203a562c7d40676cda",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=potassium/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 117,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "9f21c694dbfcc3b657e9554f69534b0762cc63561aaae2c1fe884fb3f8e3af25",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=potassium/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 117,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "9f21c694dbfcc3b657e9554f69534b0762cc63561aaae2c1fe884fb3f8e3af25",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=sodium/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 121,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "a0f61d3015bb3221534fde643410827b63226cfb4a95dc3bf75a615b19ef3b0e",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=sodium/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 121,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "a0f61d3015bb3221534fde643410827b63226cfb4a95dc3bf75a615b19ef3b0e",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=total_cholesterol/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 129,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "d77e45c3915cc74745719dac9ec68d4b511e99b4ecfd6fe0a37220badd7dfdb3",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=total_cholesterol/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 129,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "d77e45c3915cc74745719dac9ec68d4b511e99b4ecfd6fe0a37220badd7dfdb3",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=triglycerides/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 110,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "b36b8cf17edd5b7639555acb371ed4c0aa5d098c41d63030e6ea24b953c80cbe",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=triglycerides/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 110,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "b36b8cf17edd5b7639555acb371ed4c0aa5d098c41d63030e6ea24b953c80cbe",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=tsh/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 121,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "685ba05ffc98a425bb23451db95e9d7294a2a5bc015f3984ebff6822a9c3e201",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=tsh/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 121,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "685ba05ffc98a425bb23451db95e9d7294a2a5bc015f3984ebff6822a9c3e201",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=wbc/31b3413a31c84f22a3cc9d53fe081720-0.parquet",
+      "rows": 118,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "65cd5a2934b32f949131088edea930c8c80e571925af5211bb75b18f4554f5cb",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "lab_results/test_name=wbc/af3c99d945a24a88ae4f67992508e80c-0.parquet",
+      "rows": 118,
+      "schema": {
+        "lab_result_id": "object",
+        "patient_id": "object",
+        "test_value": "float64",
+        "test_unit": "object",
+        "collection_date": "datetime64[ns]",
+        "ordering_physician": "object",
+        "site_name": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "65cd5a2934b32f949131088edea930c8c80e571925af5211bb75b18f4554f5cb",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "medications.parquet",
+      "rows": 1899,
+      "schema": {
+        "medication_id": "object",
+        "patient_id": "object",
+        "medication_name": "object",
+        "dosage": "object",
+        "route": "object",
+        "frequency": "object",
+        "start_date": "datetime64[ns]",
+        "end_date": "datetime64[ns]",
+        "prescribing_physician": "object",
+        "status": "object",
+        "_source_file": "object",
+        "orphan_record": "bool"
+      },
+      "sha256": "e4c6152c3732c4ddffa3373f91c853f37a00dd5ba8bdec494d10051896490567",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    },
+    {
+      "file": "patients.parquet",
+      "rows": 650,
+      "schema": {
+        "patient_id": "object",
+        "first_name": "object",
+        "last_name": "object",
+        "date_of_birth": "datetime64[ns]",
+        "sex": "object",
+        "blood_group": "object",
+        "admission_dt": "datetime64[ns]",
+        "discharge_dt": "datetime64[ns]",
+        "contact_phone": "object",
+        "contact_email": "object",
+        "site": "object",
+        "site_id": "object",
+        "age_years": "float64",
+        "dob_missing": "bool"
+      },
+      "sha256": "fbc541e916cbcf2e5e120700318b61013657987a0234be74ad9b712d5b022370",
+      "written_at": "2026-04-25T11:45:17+00:00"
+    }
+  ]
+}

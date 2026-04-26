@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-04-25T06:54:41+00:00",
+  "sources": [
+    {
+      "dataset": "site_alpha_patients",
+      "rows_in": 370,
+      "rows_out": 350,
+      "issues": {
+        "duplicates_removed": 20,
+        "discharge_before_admission_nulled": 0,
+        "nulls_handled": 0
+      }
+    },
+    {
+      "dataset": "site_beta_patients",
+      "rows_in": 310,
+      "rows_out": 300,
+      "issues": {
+        "duplicates_removed": 10,
+        "discharge_before_admission_nulled": 0,
+        "nulls_handled": 2
+      }
+    },
+    {
+      "dataset": "site_gamma_lab_results",
+      "rows_in": 2026,
+      "rows_out": 2024,
+      "issues": {
+        "duplicates_removed": 2,
+        "negative_test_values_nulled": 73,
+        "nulls_handled": 88
+      }
+    },
+    {
+      "dataset": "diagnoses_icd10",
+      "rows_in": 1638,
+      "rows_out": 1628,
+      "issues": {
+        "duplicates_removed": 10,
+        "nulls_handled": 0
+      }
+    },
+    {
+      "dataset": "medications_log",
+      "rows_in": 1922,
+      "rows_out": 1899,
+      "issues": {
+        "duplicates_removed": 23,
+        "end_before_start_nulled": 0,
+        "nulls_handled": 0
+      }
+    },
+    {
+      "dataset": "clinical_notes_metadata",
+      "rows_in": 1128,
+      "rows_out": 1119,
+      "issues": {
+        "duplicates_removed": 9,
+        "nulls_handled": 0
+      }
+    },
+    {
+      "dataset": "genomics_variants",
+      "rows_in": 1137,
+      "rows_out": 872,
+      "issues": {
+        "duplicates_removed": 3,
+        "low_read_depth_filtered": 95,
+        "invalid_allele_frequency_filtered": 89,
+        "missing_clinical_significance_filtered": 97,
+        "unreliable_calls_filtered": 262,
+        "reliable_calls_retained": 872,
+        "nulls_handled": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+services:
+  pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Mount the datalake directory so outputs persist on the host after the
+    # container exits.  Using a named volume would also work but a bind mount
+    # makes it easier to inspect outputs without running docker cp.
+    volumes:
+      - ./datalake:/app/datalake
+    # Propagate the container exit code so docker-compose exits non-zero
+    # if the pipeline fails.  Required by the CI/CD check.
+    stdin_open: false
+    tty: false
