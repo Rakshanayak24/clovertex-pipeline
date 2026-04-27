@@ -1,0 +1,72 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pipeline:
+    name: Build & Run Pipeline
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the repo
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Set up Python 3.12 (matches Dockerfile)
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Run the pipeline directly (fast – no Docker build time)
+      - name: Run pipeline
+        run: python -m pipeline.main
+
+      # 5. Verify key output files were produced
+      - name: Verify outputs exist
+        run: |
+          echo "Checking refined zone..."
+          test -f datalake/refined/patients.parquet       || (echo "MISSING: patients.parquet" && exit 1)
+          test -f datalake/refined/diagnoses.parquet      || (echo "MISSING: diagnoses.parquet" && exit 1)
+          test -f datalake/refined/medications.parquet    || (echo "MISSING: medications.parquet" && exit 1)
+          test -f datalake/refined/clinical_notes.parquet || (echo "MISSING: clinical_notes.parquet" && exit 1)
+          test -f datalake/refined/genomics_reliable.parquet || (echo "MISSING: genomics_reliable.parquet" && exit 1)
+
+          echo "Checking consumption zone..."
+          test -f datalake/consumption/patient_summary.parquet   || (echo "MISSING: patient_summary.parquet" && exit 1)
+          test -f datalake/consumption/lab_statistics.parquet    || (echo "MISSING: lab_statistics.parquet" && exit 1)
+          test -f datalake/consumption/anomaly_flags.parquet     || (echo "MISSING: anomaly_flags.parquet" && exit 1)
+          test -f datalake/consumption/high_risk_patients.parquet || (echo "MISSING: high_risk_patients.parquet" && exit 1)
+
+          echo "Checking plots..."
+          test -f datalake/consumption/plots/01_patient_demographics.png || (echo "MISSING: plot 01" && exit 1)
+          test -f datalake/consumption/plots/06_data_quality_overview.png || (echo "MISSING: plot 06" && exit 1)
+
+          echo "Checking data quality report..."
+          test -f data_quality_report.json || (echo "MISSING: data_quality_report.json" && exit 1)
+
+          echo "All outputs verified ✅"
+
+  docker:
+    name: Docker Build Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Verify docker-compose up builds and runs without error
+      - name: Build and run via docker-compose
+        run: docker compose up --build --abort-on-container-exit
+
+      - name: Confirm docker-compose exited cleanly
+        run: echo "docker-compose up completed successfully ✅"
