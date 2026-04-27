@@ -64,7 +64,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Verify docker-compose up builds and runs without error
+      # Remove pre-existing datalake so Docker's appuser can write fresh outputs
+      # without hitting permission errors from host-owned files in the bind mount
+      - name: Clear datalake for clean Docker run
+        run: rm -rf datalake
+
       - name: Build and run via docker-compose
         run: docker compose up --build --abort-on-container-exit
 
