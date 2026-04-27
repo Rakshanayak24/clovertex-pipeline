@@ -8,7 +8,7 @@ A production-grade data engineering pipeline that ingests multi-format clinical 
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<rakshanayak24>/clovertex-pipeline.git
+git clone https://github.com/rakshanayak24/clovertex-pipeline.git
 cd clovertex-pipeline
 
 # 2. Run the full pipeline end-to-end
